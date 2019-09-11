@@ -1,0 +1,14 @@
+{% load static %}
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>La Brouette</title>
+  </head>
+  <body>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
