@@ -1,0 +1,26 @@
+{% load static %}
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>La Brouette</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo-ctn">
+        <img src="#" alt="#">
+      </div>
+      <nav>
+        <span class="nav-lnk"><a class="sub" href="a_propos">À PROPOS</a></span>
+        <span class="nav-lnk"><a class="sub" href="evenements">ÉVÉNEMENTS</a></span>
+        <span class="nav-lnk"><a class="sub" href="outils">OUTILS</a></span>
+        <span class="nav-lnk"><a class="sub" href="contact">CONTACT</a></span>
+      </nav>
+    </header>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    {# footer ? #}
+  </body>
+</html>

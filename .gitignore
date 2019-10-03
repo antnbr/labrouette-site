@@ -1,7 +1,9 @@
 *.pyc
 *~
+*.JPG
+*.jpeg
+*.png
 __pycache__
 labrouette-site
 db.sqlite3
-/static
 .DS_Store

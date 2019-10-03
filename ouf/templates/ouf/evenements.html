@@ -1,0 +1,16 @@
+{% extends 'ouf/index.html' %}
+{% block content %}
+  <header>
+    <nav>
+      <button type="button" name="button"></button>
+      <button type="button" name="button"></button>
+      <button type="button" name="button"></button>
+    </nav>
+  </header>
+  {% for ev in evenements %}
+    <section class=ev-ctn>
+      <h2>{{ ev.titre }}</h2>
+      <a href="{% url 'page_ev' pk=ev.pk %}"><img src="{{ ev.images.first().src }}" alt="{{ ev.images.first().legende }}"></a>
+    </section>
+  {% endfor %}
+{% endblock %}
